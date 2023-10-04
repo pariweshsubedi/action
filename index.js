@@ -126,7 +126,7 @@ async function dep() {
   }
 
   try {
-    await $`php ${dep} ${cmd} --file=~/deploy.php --no-interaction ${ansi} ${verbosity} ${options}`
+    await $`php ${dep} ${cmd} --file=/home/runner/deploy.php --no-interaction ${ansi} ${verbosity} ${options}`
   } catch (err) {
     core.setFailed(`Failed: dep ${cmd}`)
   }
