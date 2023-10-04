@@ -108,7 +108,7 @@ async function dep() {
   let cmd = core.getInput('dep').split(' ')
   let recipe = core.getInput('recipe')
   if (recipe !== '') {
-    recipe = `--file=${recipe}`
+    recipe = '--file='+recipe
   }
 
   let ansi = core.getBooleanInput('ansi') ? '--ansi' : '--no-ansi'
